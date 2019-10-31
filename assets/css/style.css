@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style:none;
+}
+body{
+    max-width:1084px;
+    margin:0 auto;
+    /* overflow-x:hidden; */
+
+} 
+
+.clicked_menu{
+    display: none;
+}
+.burger_lines{
+    display: none;
+}
+
+h1{
+    font-size: 50px;
+    
+
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    
+}
+
+
+
+ul{
+    width: 214px;
+    display:flex;
+    justify-content: space-between;
+   
+}
+a{
+    color: #181818;
+    transition:color 300ms ease;
+    margin:0px 0px 45px;
+    padding: 25px 50px;
+}
+a:hover{
+    color:#BADC58;
+   transition: color 300ms ease;
+  
+}
+
+.hero-content{
+    height: calc(100vh - 60px);
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero-content::before{
+    content:'';
+    display: block;
+    position:absolute;
+    
+    top:60px;
+    bottom:0px;
+    left:0;
+    right:0;
+    background-color: #181818;
+    opacity: .6;
+    z-index: -1;
+ 
+
+}
+
+.hero-content::after{
+    content: ;
+    position:absolute;
+    z-index: 1;
+    right: -905px;
+    bottom: -390px;
+}
+
+
+
+.hero-text{
+    text-align: center;
+    color:#fff;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    line-height: 2;
+}
+
+
+.hero-image{
+    position:absolute;
+    z-index:-2;
+    width: 100%;
+    height:calc(100vh - 60px);
+    top:60px;
+    left:0;
+    object-fit: cover;
+}
+.Hero-button{
+    text-align: center;
+    font-size : 14px ;
+    background-color: #BADC58;
+    color:#181818;
+    transition:300ms color ease;
+    border:none;
+    width: 164px;
+    height:46px;
+    border-radius: 8px;
+    margin: 30px 0 30px;
+    line-height: 3;   
+}
+
+
+.Hero-button:hover{
+    color:#BADC58;
+    background-color:#fff;
+    transition:;
+}
+
+.scroll_txt{color: #FFF;
+    margin-top: 110px;
+}
+
+.scroll_txt::after{
+    content: url(../../assets/images/Arrow.svg);
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 17px;
+    margin-left:50px;
+    line-height: 4;
+
+}
